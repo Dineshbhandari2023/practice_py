@@ -1,11 +1,11 @@
-
+ 
 # Body Mass Index(BMI) calculator:
 weight = float(input ("What is your Weight(KG)?"))
 height = float(input ("What is your Height(meter)?"))
 
 def calculate_bmi(weight, height):
     bmi = weight / (height ** 2)
-    return bmi
+    return round(bmi)
 
 def interpret_bmi(bmi):
     if bmi < 18.5:
